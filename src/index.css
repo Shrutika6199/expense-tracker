@@ -11,3 +11,96 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* style for Calender  */
+.rbc-event {
+  font-size: 14px;
+  padding: 6px 10px;
+  font-weight: 500;
+}
+
+.rbc-toolbar button.rbc-active {
+  background-color: #007bff !important;
+  color: white;
+}
+
+.rbc-toolbar-label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.rbc-event-content {
+  white-space: normal !important;
+}
+
+/* SignIn.css */
+.signin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #3f2b96, #a8c0ff);
+}
+
+.signin-form {
+  background-color: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  animation: fadeIn 0.6s ease;
+}
+
+.btn-purple {
+  background-color: #6f42c1;
+  color: white;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+.btn-purple:hover {
+  background-color: #5a32a3;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.calendar-container {
+  padding: 0 1rem;
+}
+
+.calendar-wrapper {
+  height: 75vh;
+  min-height: 500px;
+  max-height: 100vh;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .calendar-wrapper {
+    height: 65vh;
+    min-height: 400px;
+  }
+
+  .calendar-container h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .calendar-wrapper {
+    height: 60vh;
+    min-height: 350px;
+  }
+
+  .calendar-container {
+    padding: 0 0.5rem;
+  }
+}
